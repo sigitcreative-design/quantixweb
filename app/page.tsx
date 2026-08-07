@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Wrench, X, Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { supabase } from "../lib/supabase"; // Pastikan path ini benar sesuai file supabase.ts Anda
+import { supabase } from "@/lib/supabase"; // Menggunakan path alias absolut
 
 export default function UnderConstruction() {
   const [showLoginModal, setShowLoginModal] = useState(false);
